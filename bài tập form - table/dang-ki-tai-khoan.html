@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form đăng kí</title>
+</head>
+
+<body>
+    <h1>Đăng kí tài khoản</h1>
+    <form action="#" method="post"> <br />
+        <!--tên đăng nhập-->
+        <label for="tendangnhap"> Tên đăng nhập:</label>
+        <input type="text" id="tendangnhap" name="tendangnhap" value="" size="25" required>
+        <br />
+        <!--pass-->
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" minlength="8" maxlength="20" required> <br />
+
+        <!--nhập lại mật khẩu-->
+        <label for="nhaplaimk">Xác nhận mật khẩu:</label>
+        <input type="password" id="nhaplaimk" name="nhaplaimk" minlength="8" maxlength="20" required>
+        <br />
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value="" size="25" required>
+        <br />
+        <!--Giới tính-->
+        <label for="gioitinh">Giới tính:</label>
+        <input type="radio" name="nam" id="nam" value="nam"> <label for="nam"> Nam</label>
+        <input type="radio" name="nu" id="nu" value="nu"> <label for="nu"> Nữ</label>
+        <br />
+        <input type="Submit" value="Đăng kí">
+
+    </form>
+
+</body>
+
+</html>

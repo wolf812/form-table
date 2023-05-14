@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - table-1</title>
+</head>
+
+<body>
+    <!-- action: có giá trị là 1 ỦL, quy định nơi dữ liệu được gửi đến
+        id, name: định danh tên của form, có thể dùng để truy xuất dữ liệu trong form
+        method: Xd phương thức xử lý form (Get, Post)
+        enctype: xác định cách mã hóa dữ liệu gửi lên server
+-->
+    <form action="simpleform.html" method="get" name="formcb" id="formcb" class="wufoo">
+        <!--
+    GET: nơi chưá dữ liệu - URL - nhìn thấy trên thanh trình duyệt
+    POST: nơi chứa dữ liệu - body - không nhìn thấy.
+  --------------------------------------------------------------------  
+
+    enctype: kiểu mã hóa dữ liệu
+    +application/x-www-form-urlencoded: kiểu mã hóa mặc định nếu thuộc tính enctype không có giá trị. Tất cả các kí tự được mã hóa trước khi gửi.
+    + text/plain: mã hóa theo kiểu text, dữ liệu gửi lên không có mã hóa
+    + multipart/form-data: khi gửi dữ liệu lên sever có kiểu dữ liệu là nhị phân. sử dụng khi người dùng muốn tải tập dữ liệu lên.
+
+-->
+
+<style>
+    .wufoo {
+        font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+</style>
+        
+
+        <h2>Order Form</h2>
+        <p>What would you like to buy?</p>
+        <select name="" id="">
+            <option value="">A</option>
+            <option value="">B(+0,5$)</option>
+            <option value="">C(+1$)</option>
+        </select>
+        <br />
+        <p>How many would you like to order?</p> <br />
+        <input type="radio" name="oder" id="od"><label for="od">1 - $10</label> <br />
+        <input type="radio" name="oder" id="od"><label for="od">1 - $20</label><br />
+        <input type="radio" name="oder" id="od"><label for="od">1 - $25</label> <br />
+
+        <!--nhập tên-->
+        <label for="firstname">Name <span style="color: red;">*</span></label><br>
+        <input type="text" name="firstname" id="firstname" value="" placeholder="FirstName" size="15">
+        <!--span:
+    + là một trong những thẻ quan trọng và được sử dụng nhiều nhất trong HTML.
+    + Thẻ <span> được dùng để nhóm các phần tử nội tuyến lại với nhau, tiện cho việc định dạng CSS.
+
+-->
+        <input type="text" name="lastname" id="lastname" value="" placeholder="Lastname" size="15"> <br />
+
+        <!-- Email -->
+        <label for="email">Email</label> <br />
+        <input type="text" id="email" name="email" value="" placeholder="ab.cd12@gmail.com" size="25"> <br />
+        <!-- Phone number-->
+
+        <label for="phonenumber">Phone Number</label> <br>
+        <input type="number" id="phonenumber" name="phonenumber1" value="" size="4" placeholder="000"> -
+        <input type="number" id="phonenumber" name="phonenumber2" value="" size="4" placeholder="000"> -
+        <input type="number" id="phonenumber" name="phonenumber3" value="" size="5" placeholder="0000"> <br />
+
+        <input type="button" value="Submit" name="Submit">
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
